@@ -1,3 +1,8 @@
+# Advent of Code C++ 2021
+Forked from the template `advent-of-code-cpp-starter` by bcooperstl.
+Apperantly i still havent learned how Github works so this is still a Public template...  
+I wont share my solutions WTH!
+
 # advent-of-code-cpp-starter
 This is a simple C++ runner for doing Advent-of-Code challenges. It's designed to have one executable which is given parameters for the day and part, and then it will run that particular solution.
 
