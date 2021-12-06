@@ -76,6 +76,11 @@ int main (int argc, char * argv[])
                 break;
         }
     }
+    if (!(given_opts & DASH_F))
+    {
+        cout << "No filename specified, running default..\n";
+        
+    }
     
     // check for valid option combination and get any extra arguments if running from a file
     if (given_opts == OPTS_RUN_FILE)

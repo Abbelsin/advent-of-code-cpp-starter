@@ -1,0 +1,5 @@
+{
+	"session-cookie": "53616c7465645f5f5fab03cf8225162b7976ae6fa1f2eedb1e8c70a37352398b9c3d8763cfac17e36b292535c1389e07",
+	"output": "day{{.Day}}_input.txt",
+    "year": 2021
+}
