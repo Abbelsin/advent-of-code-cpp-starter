@@ -268,8 +268,12 @@ build/aoc.o: src/aoc.cpp  \
 	include/common/constants.h
 	g++ ${CPPFLAGS} -o build/aoc.o -c src/aoc.cpp
 
+
+script:
+	sh download.sh
+
 #If adding a new library, be sure to add it in the correct order in the compile line
-bin/aoc: build/aoc.o  \
+bin/aoc: build/aoc.o | script \
 	bin/lib/librunner.a \
 	bin/lib/libsolutions.a
 	g++ ${CPPFLAGS} -o bin/aoc build/aoc.o -Lbin/lib -lsolutions -lrunner
