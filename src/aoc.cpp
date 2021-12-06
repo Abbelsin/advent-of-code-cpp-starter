@@ -79,7 +79,8 @@ int main (int argc, char * argv[])
     if (!(given_opts & DASH_F))
     {
         cout << "No filename specified, running default..\n";
-        
+        filename = "data/sample/day"+ std::to_string(day) +"_input.txt";
+        given_opts |= DASH_F;
     }
     
     // check for valid option combination and get any extra arguments if running from a file
